@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes logo{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.logo-animated{
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+}
+
+.btn-primary{
+    color: red;
+    background-color: orange !important;
+    text-shadow: 0 0 1px white;
+}
+.btn-primary:hover{
+    color: whitesmoke; 
+    background-color: orangered !important;
+}
+
+.orangered-border{
+    --tw-ring-color: orangered;
+    color: orangered; 
+    font-weight: bolder;
+}
+.background{
+    background-image: url('https://64.media.tumblr.com/e6fb8e9eed99924aa31a4b8109aeca55/68d75285072e4b8d-bf/s500x750/734f68030a86a097994c60da9c06567fb626b83b.gifv');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: -webkit-fill-available;
+    min-height: -webkit-fill-available;
+    z-index: -1000;
+}
+
+.card{
+    background-color: rgba(00,00,00,.4);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card label{
+    color: whitesmoke !important;
+}
