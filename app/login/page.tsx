@@ -55,7 +55,7 @@ export default function Login() {
   return (
     <>
       <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 background'>
-        <img className="background" alt="hola"></img>
+        
         <div className='sm:mx-auto sm:w-full sm:max-w-sm'>
           <Image className=' mx-auto w-auto logo-animated' src='/logo.png' alt='Multiverse' width={200} height={200}></Image>
           <audio loop preload="true" autoPlay={true}>
