@@ -12,6 +12,7 @@ export default function Login() {
 
   const router = useRouter();
 
+
   function decodeJWT(token: string) {
     try {
       const decoded = jwt.decode(token);
